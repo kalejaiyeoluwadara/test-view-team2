@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LogIn</title>
+    <script
+      src="https://kit.fontawesome.com/457367cb8c.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <link rel="stylesheet" href="./CSS/general_styling.css" /> -->
+    <!-- <link rel="stylesheet" href="./CSS/login.css" /> -->
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+    </style>
+    <link rel="stylesheet" href="./CSS/updateStyle.css">
+    <link rel="stylesheet" href="./CSS/updateLogin.css">
+  </head>
+  <body>
+    <!-- navBar -->
+    <nav>
+      <div >
+        <!-- <img src="./IMG/max_stud_logo.svg" alt="max_stud_logo"> -->
+        <p>MaxStud</p>
+      </div>
+      <div>
+        <ul>
+          <li><a  href="index.html">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a class="active" href="login.html">Login</a></li>
+          <li class="signup"><a  href="signup.html">Sign Up</a></li>
+        </ul>
+      </div>
+		</nav>
+
+    <!-- mobile nav -->
+    <div class="mobile">
+      <!-- top -->
+      <div class="menu">
+        <h1>MaxStud</h1>
+        <img onclick=handleNav() src="./IMG/menu.png" alt="">
+      </div>
+
+      <div class="links">
+        <ul>
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li class="signup"><a href="signup.html">Sign Up</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- <section>
+      <div class="login_form_card">
+        <button class="button">Enter Login Details</button>
+
+        <form action="" id="login_form">
+          <div class="form_input">
+            <label for="user_name" id="username_l">Username:</label>
+            <input type="text" name="user_name" id="user_name" />
+
+            <label for="password" id="password_l">Password:</label>
+            <input type="password" name="password" id="password" />
+          </div>
+
+          <button type="submit">
+            <i class="fa-solid fa-arrow-right-to-bracket"></i>
+            Login
+          </button>
+          <br />
+          <a href="/">Forgot Password?</a>
+        </form>
+      </div>
+
+      <div class="max_stud_paragraph">
+        <div class="logo">
+          <img src="./IMG/max_stud_logo_white.svg" alt="max_stud_logo_white" />
+          <p>
+            MAX STUD EXAM PREPARATION <br />
+            PLANNER
+          </p>
+        </div>
+
+        <p>
+          Welcome back to Max Stud! <br />
+          The number 1 exam strategist. <br />
+          We can't wait for that academic comeback <br />
+          from you
+        </p>
+      </div>
+    </section> -->
+<div class="main">  
+  <section class="loginPage">
+    <div class="illustration">
+        <img src="https://cdn3d.iconscout.com/3d/premium/thumb/3d-computer-4975987-4149665.png?f=webp" alt="">
+    </div>
+    <div class="pageContent">
+      <h3>MaxStud</h3>
+      <div class="form">
+        <h4>Welcome Back!</h4>
+        <p>Your academic comeback awaits you!</p>
+        <form action="">
+          <div class="inputs">
+          <label for="">Email</label>
+          <!-- <img src="./IMG/mail.png" alt=""> -->
+          <input placeholder="example@gmail.com" type="email">
+          </div>
+          <div class="inputs">
+            <label for="">Password</label>
+            <input type="password">
+            <!-- <img src="./IMG/von.png" alt=""> -->
+            </div>
+        </form>
+        <button class="logs">
+          Login
+           </button>
+        <p class="forgot">Forgot Password?</p>
+        <p class="acct">Don't have an account? <span><a href="signup.html">Sign In</a></span></p>
+      </div>
+    </div>
+  </section>
+</div>
+
+
+
+
+
+
+    <footer><p>Copywrite(c)2023 team2 shadowdevs 2023</p></footer>
+  </body>
+  <script>
+    let display = false;
+    function handleNav(){
+      const links = document.querySelector('.links');
+      display = !display;
+      if(display){
+      links.style.display = 'none';
+      }
+      else{
+        links.style.display = 'flex';
+      }
+    }
+  </script>
+</html>
+
+<!-- https://cdn3d.iconscout.com/3d/premium/thumb/3d-computer-4975987-4149665.png?f=webp -->

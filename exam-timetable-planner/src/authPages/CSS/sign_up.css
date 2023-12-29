@@ -1,0 +1,92 @@
+.button{
+	color: #fff;
+}
+
+#sign_up_form{
+	display: grid;
+	grid-template-areas: 
+	"f_name_l last_name_l"
+	"f_name_i last_name_i"
+	"username_l ."
+	"username_i username_i"
+	"password_l ."
+	"password_i password_i"
+	"email_l ."
+	"email_i email_i"
+	;
+	-webkit-grid-gap: 2em;
+	grid-gap: .2em;
+	font-size: 2rem;
+	width: 50%;
+	margin-bottom: 20px;
+}
+
+#f_name_l{
+	grid-area: f_name_l;
+}
+
+#first_name{
+	grid-area: f_name_i;
+}
+
+#last_name_l{
+	grid-area: last_name_l;
+}
+
+#last_name{
+	grid-area: last_name_i;
+}
+
+#username_l{
+	grid-area: username_l;
+}
+
+#user_name{
+	grid-area: username_i;
+}
+
+#password_l{
+	grid-area: password_l;
+}
+
+#password{
+	grid-area: password_i;
+}
+
+#email_l{
+	grid-area: email_l;
+}
+
+#email{
+	grid-area: email_i;
+}
+
+label{
+	text-align: left;
+}
+
+input{
+	height: 2.5em;
+}
+
+/* footer{
+	position: sticky;
+} */
+
+@media screen and (max-width: 600px) {
+	#sign_up_form{
+		display: grid;
+		grid-template-areas: 
+		"f_name_l ."
+		"f_name_i f_name_i"
+		"last_name_l ."
+		"last_name_i last_name_i"
+		"username_l ."
+		"username_i username_i"
+		"password_l ."
+		"password_i password_i"
+		"email_l ."
+		"email_i email_i"
+		;
+	}
+}

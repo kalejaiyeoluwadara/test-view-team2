@@ -1,0 +1,49 @@
+/* Stylings for Welcome Page specific stylings */
+body{
+	background: #000 url('../IMG/welcome_screen_background.svg') no-repeat;
+	background-position: center 5%;
+	background-attachment: fixed;
+	background-size: 30em;
+}
+
+section{
+	padding-top: 12em;
+}
+
+/* section{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1.2em;
+	padding-top: 12em;
+	text-align: center;
+} */
+
+.max_stud_motto{
+	font-size: 1.5rem;
+}
+
+/* .sign_up_button {
+	border-radius: 30px;
+	width: 30%;
+	min-width: 10em;
+	padding: .5em;
+	text-align: center;
+	background-color: #AE1314;
+	border: none;
+} */
+
+.welcome_login_prompt{
+	font-size: 1.2rem;
+}
+
+.welcome_login_prompt a{
+	color: #AE1314;
+}
+
+@media screen and (min-height: 460px) {
+	body{
+		scroll-behavior: smooth;
+		overflow:hidden scroll;
+	}
+}

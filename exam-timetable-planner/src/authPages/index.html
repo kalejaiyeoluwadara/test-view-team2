@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome</title>
+    <!-- <link rel="stylesheet" href="./CSS/general_styling.css" /> -->
+    <!-- <link rel="stylesheet" href="./CSS/home.css" /> -->
+    <script
+      src="https://kit.fontawesome.com/457367cb8c.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+    </style>
+    <link rel="stylesheet" href="./CSS/updateStyle.css">
+  <!-- <link rel="stylesheet" href="../schedulePages/style.css"> -->
+  </head>
+  <body>
+
+    <!-- adding updates to the navBar -->
+		<nav>
+      <div >
+        <!-- <img src="./IMG/max_stud_logo.svg" alt="max_stud_logo"> -->
+        <p>MaxStud</p>
+      </div>
+      <div>
+        <ul>
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li class="signup"><a href="signup.html">Sign Up</a></li>
+        </ul>
+      </div>
+		</nav>
+
+    <!-- mobile nav -->
+    <div class="mobile">
+      <!-- top -->
+      <div class="menu">
+        <h1>MaxStud</h1>
+        <img onclick=handleNav() src="./IMG/menu.png" alt="">
+      </div>
+
+      <div class="links">
+        <ul>
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li class="signup"><a href="signup.html">Sign Up</a></li>
+        </ul>
+      </div>
+    </div>
+
+
+    <main>
+      <!-- content -->
+      <div class="content">
+        <h1>Your Study Strategist...</h1>
+        <p class="text">
+          Welcome to Max Stud, your go-to study strategist! Our timetable planner is designed to revolutionize your study routine, offering a user-friendly platform for personalized schedules. Say goodbye to chaos and hello to structured, effective learning. Maximize productivity and embark on a transformative academic journey with Max Stud – where strategic planning meets success!
+        </p>
+        <div class="buttons">
+          <button class="log"><a href="signup.html">SignUp</a></button>
+          <button class="sign"><a href="login.html">Login</a></button>
+        </div>
+      </div>
+      <!-- image -->
+      <div  class="imageHolder">
+        <img src="https://cdn3d.iconscout.com/3d/premium/thumb/time-management-by-employee-9077381-7408559.png" alt="">
+      </div>
+    </main>
+		<!-- <section>
+      <p class="max_stud_motto">Max Stud: Your Study Strategist!</p>
+				<button class="sign_up_button button" onclick="signup()">
+					<i class="fa-regular fa-newspaper"></i>
+					Sign Up
+				</button>
+				<p class="welcome_login_prompt">Already have an account? <a href="login.html">Login</a></p>
+				
+		</section> -->
+
+		<footer><p>Copywrite(c)2023 team2 shadowdevs 2023</p></footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var display = true;
+    
+        function handleNav() {
+          const links = document.querySelector('.links');
+          display = !display; // Toggle the display variable first
+    
+          if (display) {
+            links.style.display = 'flex';
+          } else {
+            links.style.display = 'none';
+          }
+        }
+    
+        
+      });
+    </script>
+    
+  </body>
+</html>
+
+
+
+
+
+
