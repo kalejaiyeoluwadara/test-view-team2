@@ -220,13 +220,11 @@ button{
   
 .links{
     width: 100vw;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
 }
-.mobile{
-    /* width: 100vw; */
-}
+
    .links ul{
     display: flex;
     flex-direction: column;

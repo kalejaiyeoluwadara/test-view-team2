@@ -17,20 +17,39 @@
     <link rel="stylesheet" href="./CSS/updateLogin.css">
   </head>
   <body>
-    <nav>
+     <!-- adding updates to the navBar -->
+		<nav>
       <div >
         <!-- <img src="./IMG/max_stud_logo.svg" alt="max_stud_logo"> -->
         <p>MaxStud</p>
       </div>
       <div>
         <ul>
-          <li><a href="/exam-timetable-planner/index.html">Home</a></li>
+          <li><a  href="/exam-timetable-planner/index.html">Home</a></li>
           <li><a href="#">About</a></li>
-          <li><a  href="login.html">Login</a></li>
-          <li  class="signup"><a  class="active" href="#">Sign Up</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li class="signup"><a class="active" href="signup.html">Sign Up</a></li>
         </ul>
       </div>
 		</nav>
+
+    <!-- mobile nav -->
+    <div class="mobile">
+      <!-- top -->
+      <div class="menu">
+        <h1>MaxStud</h1>
+        <img onclick=handleNav() src="./IMG/Menu.png" alt="">
+      </div>
+
+      <div class="links">
+        <ul>
+          <li><a  href="/exam-timetable-planner/index.html">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li class="signup"><a class="active" href="signup.html">Sign Up</a></li>
+        </ul>
+      </div>
+    </div>
 <div class="main">  
   <section class="loginPage">
    
@@ -63,4 +82,17 @@
 </div>
     <footer><p>Copywrite(c)2023 team2 shadowdevs 2023</p></footer>
   </body>
+  <script>
+    let display = true;
+    function handleNav(){
+      const links = document.querySelector('.links');
+      display = !display;
+      if(display){
+      links.style.display = 'none';
+      }
+      else{
+        links.style.display = 'flex';
+      }
+    }
+  </script>
 </html>

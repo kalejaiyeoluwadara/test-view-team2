@@ -39,7 +39,7 @@
       <!-- top -->
       <div class="menu">
         <h1>MaxStud</h1>
-        <img onclick=handleNav() src="./src/IMG/menu.png" alt="">
+        <img onclick=handleNav() src="./src/authPages/IMG/Menu.png" alt="">
       </div>
 
       <div class="links">
@@ -83,22 +83,17 @@
 		<footer><p>Copywrite(c)2023 team2 shadowdevs 2023</p></footer>
 
     <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        var display = true;
-    
-        function handleNav() {
-          const links = document.querySelector('.links');
-          display = !display; // Toggle the display variable first
-    
-          if (display) {
-            links.style.display = 'flex';
-          } else {
-            links.style.display = 'none';
-          }
+      let display = true;
+      function handleNav(){
+        const links = document.querySelector('.links');
+        display = !display;
+        if(display){
+        links.style.display = 'none';
         }
-    
-        
-      });
+        else{
+          links.style.display = 'flex';
+        }
+      }
     </script>
     
   </body>
