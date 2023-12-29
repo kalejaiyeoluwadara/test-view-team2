@@ -184,11 +184,12 @@ button{
     .menu{
 
         display: flex;
-        width: 100vw;
+        width: 100%;
         justify-content: space-between;
         padding: 5px 20px;
         color: white;
         position: absolute;
+        align-items: center;
         height: 60px;
         z-index: 300;
 /*         
@@ -198,6 +199,9 @@ button{
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
         backdrop-filter: blur(5px);
         -webkit-backdrop-filter: blur(5px); */
+    }
+    .menu img{
+        height: 40px;
     }
     .content h1{
         font-size: 25px;
