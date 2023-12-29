@@ -183,6 +183,8 @@ footer{
     }
     .menu img{
         height: 40px;
+        position: absolute;
+        right: 30px;
     }
     .content h1{
         font-size: 25px;
